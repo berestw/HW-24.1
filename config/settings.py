@@ -67,8 +67,8 @@ DATABASES = {
         'NAME': 'mailing',  # Название БД
         'USER': USER_DB,  # Пользователь для подключения
         'PASSWORD': PASSWORD_DB,  # Пароль для этого пользователя
-        'HOST': 'localhost',
-        'PORT': '5432'
+        'HOST': os.getenv('HOST'),
+        'PORT': os.getenv('PORT')
     }
 }
 
